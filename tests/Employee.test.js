@@ -1,7 +1,7 @@
 const testEmployee = require('../lib/Employee')
 
 describe('testEmployee', () => {
-    describe('employee', () => {
+    describe('Employee', () => {
         it('The Employee parameters should match the constants.', () => {
             const name = 'Test Name';
             const id = 97679869;
