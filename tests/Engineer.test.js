@@ -1,4 +1,4 @@
-const testEngineer = require('../lib/Engineer')
+const testlyEngineer = require('../lib/Engineer')
 
 describe('testEngineer', () => {
     describe('Engineer', () => {
@@ -7,7 +7,7 @@ describe('testEngineer', () => {
             const id = 97679869;
             const email = 'testexample@email.com';
             const github = 'https://github.com/kylelarsenlarsen'
-            const engineer = new testEngineer('Test Name', 97679769, 'testexample@email.com', 'https://github.com/kylelarsenlarsen')
+            const engineer = new testlyEngineer('Test Name', 97679769, 'testexample@email.com', 'https://github.com/kylelarsenlarsen')
             expect(engineer.name).toEqual(name)
             expect(engineer.id).toEqual(id)
             expect(engineer.email).toEqual(email)
