@@ -36,6 +36,7 @@ const userPrompt = () => {
         const manager = new Manager(info.nameofmanager, info.idofmanager, info.emailofmanager, info.officenumberofmanager)
         myTeam.push(manager)
     })
+    .then(response)
 }
 
 const engineerPrompt = () => {
@@ -61,6 +62,13 @@ const engineerPrompt = () => {
             name: 'githubofengineer'
         }
     ]
+    return inquirer
+    .prompt(prompt)
+    .then((info) => {
+        const engineer = new Engineer(info.nameofengineer, info.idofengineer, info.emailofengineer, info.githubofengineer)
+        myTeam.push(engineer)
+    })
+    .then(response)
 }
 
 const internPrompt = () => {
@@ -86,6 +94,13 @@ const internPrompt = () => {
             name: 'schoolofintern'
         }
     ]
+    return inquirer
+    .prompt(prompt)
+    .then((info) => {
+        const engineer = new Engineer(info.nameofengineer, info.idofengineer, info.emailofengineer, info.githubofengineer)
+        myTeam.push(engineer)
+    })
+    .then(response)
 }
 
 // there needs to be a function to ask whether we would like to add another employee. there needs to be a return so we can populate our html file with the user input.
