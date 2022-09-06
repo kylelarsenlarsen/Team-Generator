@@ -1,9 +1,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const renderHTML = require('./src/HTML');
-const manager = require('./lib/Manager');
-const engineer = require('./lib/Engineer');
-const intern = require('./lib/Intern');
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
 const myTeam = [];
 
 // in this next section i need to have a series of question to prompt the user with such as: questions for the manager's card, questions for the engineer's card, and questions for the intern's card. 
@@ -83,3 +83,17 @@ const internPrompt = () => {
 }
 
 // there needs to be a function to ask whether we would like to add another employee. there needs to be a return so we can populate our html file with the user input.
+const response = () => {
+    const prompt = [
+        {
+            type: 'list',
+            name: 'option',
+            message: "Add team member?",
+            choices: [
+                {name: 'Engineer', value: 'option1'},
+                {name: 'Intern', value: 'option2'},
+                {name: 'Generate Team', value: 'option3'}
+            ]
+        }
+    ]
+}
