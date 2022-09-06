@@ -30,6 +30,12 @@ const userPrompt = () => {
             name: 'officenumberofmanager'
         }
     ]
+    return inquirer
+    .prompt(prompt)
+    .then((info) => {
+        const manager = new Manager(info.nameofmanager, info.idofmanager, info.emailofmanager, info.officenumberofmanager)
+        myTeam.push(manager)
+    })
 }
 
 const engineerPrompt = () => {
