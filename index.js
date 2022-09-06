@@ -81,3 +81,5 @@ const internPrompt = () => {
         }
     ]
 }
+
+// there needs to be a function to ask whether we would like to add another employee. there needs to be a return so we can populate our html file with the user input.
