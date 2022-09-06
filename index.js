@@ -24,6 +24,10 @@ const userPrompt = () => {
             message: "Manager's email:",
             name: 'emailofmanager'
         },
-        
+        {
+            type: 'input',
+            message: "Manager's office number:",
+            name: 'officenumberofmanager'
+        }
     ]
 }
