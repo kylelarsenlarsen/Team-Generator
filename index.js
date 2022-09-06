@@ -96,4 +96,20 @@ const response = () => {
             ]
         }
     ]
+    inquirer
+    .prompt(prompt)
+    .then(response => {
+        if(response.option === 'option1'){
+            engineerPrompt()
+        }
+        else if(response.option === 'option2'){
+            internPrompt()
+        }
+        else if(response.option === 'option3'){
+            console.log(myTeam)
+            fs.writeFile('dist/index.html', HTML(myTeam), (err) => err ? console.error(err) : console.log('Your team has been created!'))
+        }
+    })
 }
+
+userPrompt()
