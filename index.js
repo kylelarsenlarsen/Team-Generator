@@ -31,3 +31,53 @@ const userPrompt = () => {
         }
     ]
 }
+
+const engineerPrompt = () => {
+    const prompt = [
+        {
+            type: 'input',
+            message: "Engineer's name:",
+            name: 'nameofengineer'
+        },
+        {
+            type: 'input',
+            message: "Engineer's ID:",
+            name: 'idofengineer'
+        },
+        {
+            type: 'input',
+            message: "Engineer's email:",
+            name: 'emailofengineer'
+        },
+        {
+            type: 'input',
+            message: "Engineer's GitHub URL:",
+            name: 'githubofengineer'
+        }
+    ]
+}
+
+const internPrompt = () => {
+    const prompt = [
+        {
+            type: 'input',
+            message: "Intern's name:",
+            name: 'nameofintern'
+        },
+        {
+            type: 'input',
+            message: "Intern's ID:",
+            name: 'idofintern'
+        },
+        {
+            type: 'input',
+            message: "Intern's email:",
+            name: 'emailofintern'
+        },
+        {
+            type: 'input',
+            message: "Intern's school:",
+            name: 'schoolofintern'
+        }
+    ]
+}
