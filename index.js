@@ -97,8 +97,8 @@ const internPrompt = () => {
     return inquirer
     .prompt(prompt)
     .then((info) => {
-        const engineer = new Engineer(info.nameofengineer, info.idofengineer, info.emailofengineer, info.githubofengineer)
-        myTeam.push(engineer)
+        const intern = new Intern(info.nameofintern, info.idofintern, info.emailofintern, info.githubofintern)
+        myTeam.push(intern)
     })
     .then(response)
 }

@@ -1,17 +1,17 @@
 const theGeneratedTeam = (myTeam) => {
     const generatedTeam = [];
 
-    const populateIntern = intern => {
-        let internSegment = ``
+    const populateManager = manager => {
+        let managerSegment = ``
     }
-
+    
     const populateEngineer = engineer => {
         let engineerSegment = ``
     }
 
-    const populateManager = manager => {
-        let managerSegment ``
+    const populateIntern = intern => {
+        let internSegment = ``
     }
 
-    
 }
+
