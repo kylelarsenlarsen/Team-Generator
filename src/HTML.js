@@ -27,8 +27,8 @@ const theGeneratedTeam = (myTeam) => {
         <div class="card-body" style="background:rgb(250, 250, 255)">
             <ul class="list-group">
                 <li class="list-group-item">ID: ${engineer.id}</li>
-                <li class="list-group-item">Email: <a href="mailto:someone@example.com">Send email</a></li>
-                <li class="list-group-item">GitHub: </li>
+                <li class="list-group-item">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></li>
+                <li class="list-group-item">GitHub: <a href="${engineer.github}">${engineer.github}</a></li>
             </ul>
         </div>
     </section>`;
@@ -44,7 +44,7 @@ const theGeneratedTeam = (myTeam) => {
         <div class="card-body" style="background:rgb(250, 250, 255)">
             <ul class="list-group">
                 <li class="list-group-item">ID: ${intern.id}</li>
-                <li class="list-group-item">Email: <a href="mailto:someone@example.com">Send email</a></li>
+                <li class="list-group-item">Email: <a href="mailto:${intern.email}">${intern.email}</a></li>
                 <li class="list-group-item">School: ${intern.school}</li>
             </ul>
         </div>
