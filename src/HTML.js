@@ -26,9 +26,9 @@ const theGeneratedTeam = (myTeam) => {
         </div>
         <div class="card-body" style="background:rgb(250, 250, 255)">
             <ul class="list-group">
-                <li class="list-group-item">ID: ${}</li>
-                <li class="list-group-item">Email: ${}</li>
-                <li class="list-group-item">GitHub: ${}</li>
+                <li class="list-group-item">ID: ${engineer.id}</li>
+                <li class="list-group-item">Email: <a href="mailto:someone@example.com">Send email</a></li>
+                <li class="list-group-item">GitHub: </li>
             </ul>
         </div>
     </section>`;
@@ -38,14 +38,14 @@ const theGeneratedTeam = (myTeam) => {
     let populateIntern = intern => {
         let internSegment = `<section class="card" style="width: 350px">
         <div class="card-header" style="background: rgba(11, 74, 134, 0.856); color: white;">
-        <h3 class="card-title">${}</h3>
+        <h3 class="card-title">${intern.name}</h3>
         <h4 class="card-title"><i class="fa-solid fa-graduation-cap"></i>Intern</h4>
         </div>
         <div class="card-body" style="background:rgb(250, 250, 255)">
             <ul class="list-group">
-                <li class="list-group-item">ID: ${}</li>
-                <li class="list-group-item">Email: ${}</li>
-                <li class="list-group-item">School: ${}</li>
+                <li class="list-group-item">ID: ${intern.id}</li>
+                <li class="list-group-item">Email: <a href="mailto:someone@example.com">Send email</a></li>
+                <li class="list-group-item">School: ${intern.school}</li>
             </ul>
         </div>
     </section>`;
