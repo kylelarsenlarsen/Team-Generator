@@ -28,7 +28,7 @@ const theGeneratedTeam = (myTeam) => {
             <ul class="list-group">
                 <li class="list-group-item">ID: ${}</li>
                 <li class="list-group-item">Email: ${}</li>
-                <li class="list-group-item">School: ${}</li>
+                <li class="list-group-item">GitHub: ${}</li>
             </ul>
         </div>
     </section>`;
@@ -51,8 +51,22 @@ const theGeneratedTeam = (myTeam) => {
     </section>`;
         generatedTeam.push(internSegment);
     }
-}
 
+    for(member of myTeam) {
+        if(member.getRole() === 'Manager') {
+            populateManager(member)
+        }
+        if(member.getRole() === 'Engineer') {
+            populateEngineer(member)
+        }
+        if(member.getRole() === 'Intern') {
+            populateIntern(member)
+        }
+    }
+
+    return generatedTeam.join('')
+    
+}
 
 function renderHTML(myTeam) {
     return `<!DOCTYPE html>
