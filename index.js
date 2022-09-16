@@ -113,7 +113,7 @@ const response = () => {
             choices: [
                 {name: 'Engineer', value: 'option1'},
                 {name: 'Intern', value: 'option2'},
-                {name: 'Generate Team', value: 'option3'}
+                {name: 'Generate Team', value: 'option3'},
             ]
         }
     ]
@@ -128,7 +128,8 @@ const response = () => {
         }
         else if(response.option === 'option3'){
             console.log(myTeam)
-            fs.writeFile('dist/index.html', HTML(myTeam), (err) => err ? console.error(err) : console.log('Your team has been created!'))
+            fs.writeFile('dist/index.html', renderHTML(myTeam), (err) => err ? console.error(err) : console.log('Your team has been created!'))
+            console.log(response.option);
         }
     })
 }

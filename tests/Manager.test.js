@@ -7,7 +7,7 @@ describe('testManager', () => {
             const id = 97679869;
             const email = 'testexample@email.com';
             const officeNumber = '877-CASHNOW'
-            const Manager = new testosteroneManager('Test Name', 97679769, 'testexample@email.com', '877-CASHNOW')
+            const Manager = new testosteroneManager('Test Name', 97679869, 'testexample@email.com', '877-CASHNOW')
             expect(Manager.name).toEqual(name)
             expect(Manager.id).toEqual(id)
             expect(Manager.email).toEqual(email)
